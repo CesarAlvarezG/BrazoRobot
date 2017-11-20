@@ -19,9 +19,14 @@ void setup() {
  Articulacion1.attach(pinArticulacion1);
  Articulacion2.attach(pinArticulacion2);
  Garra.attach(pinGarra);
+ //Inicialización del brazo
+ Base.write(0);
+ Articulacion1.write(0);
+ Articulacion2.write(0);
+ Garra.write(0);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  
 
 }

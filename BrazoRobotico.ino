@@ -4,7 +4,7 @@
 #define pinArticulacion1 9
 #define pinArticulacion2 10
 #define pinGarra 11
-
+#define InitAngle 120
 
 Servo Base;
 Servo Articulacion1;
@@ -20,10 +20,10 @@ void setup() {
  Articulacion2.attach(pinArticulacion2);
  Garra.attach(pinGarra);
  //Inicialización del brazo
- Base.write(0);
- Articulacion1.write(0);
- Articulacion2.write(0);
- Garra.write(0);
+ Base.write(InitAngle);
+ Articulacion1.write(InitAngle);
+ Articulacion2.write(InitAngle);
+ Garra.write(InitAngle);
 }
 
 void loop() {
